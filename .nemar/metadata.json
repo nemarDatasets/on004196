@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Bimodal dataset on Inner speech",
+  "description": "This bimodal neuroimaging dataset combines electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) data acquired during inner-speech production tasks. The dataset includes recordings from four healthy participants performing inner-speech tasks with eight words from social and numerical categories, with 40 trials per word per modality. This multimodal approach leverages the complementary temporal resolution of EEG and spatial resolution of fMRI to advance brain-computer interface research for speech prostheses and communication restoration.",
+  "methods_description": "Data were collected from four right-handed participants during an inner-speech task involving eight words from two categories (social: child, daughter, father, wife; numeric: four, three, ten, six). Each word stimulus was presented in 40 trials per modality, yielding 320 trials per participant in each modality. EEG and fMRI data were acquired nonsimultaneously. Ethical approval was obtained from Etikprövning myndigheden (ID: 2021-06710-01).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,62 +20,6 @@
     "Marcus Liwicki": {},
     "Johan Eriksson": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds004196.v2.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on004196",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004196",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/s41597-023-02286-w",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1101/2022.05.24.492109",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "This research was funded by the Grants for excellent research projects proposals of SRT.ai 2022."
-    },
-    {
-      "funder_name": "SRT.ai",
-      "award_title": "Grants for excellent research projects proposals"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "anat",
-    "fmap",
-    "func",
-    "eeg"
-  ],
-  "resource_type_specific": "Structural MRI Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".bdf",
-    ".gz",
-    ".json",
-    ".md",
-    ".tsv"
-  ],
-  "description": "This bimodal neuroimaging dataset combines electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) data acquired during inner-speech production tasks. The dataset includes recordings from four healthy participants performing an inner-speech task with eight words from social and numerical categories, with 40 trials per word per modality. This multimodal approach leverages the complementary temporal resolution of EEG and spatial resolution of fMRI to advance brain-computer interface research for speech prostheses and communication restoration.",
-  "methods_description": "Data were collected from four right-handed participants during an inner-speech task involving eight words from two categories (social: child, daughter, father, wife; numeric: four, three, ten, six). Each word stimulus was presented in 40 trials, yielding 320 trials per modality per participant. EEG and fMRI data were acquired nonsimultaneously. Ethical approval was obtained from Etikprövning myndigheden (ID: 2021-06710-01).",
   "keywords": [
     {
       "term": "EEG"
@@ -98,7 +44,68 @@
     },
     {
       "term": "communication restoration"
+    },
+    {
+      "term": "inner-speech production"
+    },
+    {
+      "term": "multimodal fusion"
     }
   ],
-  "source_hash": "04012ec5b4c3515904fb0099b6ecb7d3b9265e540eb5430d84cdb0dbbf1789f0"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on004196",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004196",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-023-02286-w",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2022.05.24.492109",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004196.v2.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This research was funded by the Grants for excellent research projects proposals of SRT.ai 2022."
+    },
+    {
+      "funder_name": "SRT.ai",
+      "award_title": "Grants for excellent research projects proposals"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
+  "modalities": [
+    "anat",
+    "fmap",
+    "func",
+    "eeg"
+  ],
+  "sizes": [
+    "10.0 GB (41 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "9f7839f88f3141fbcf16d10310100a9cf1312d13f51498695aaa702ec4ff77bd"
 }
