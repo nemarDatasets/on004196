@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004196",
-  "source": "openneuro",
-  "source_id": "ds004196",
+  "pipeline_stage": "enriched",
   "title": "Bimodal dataset on Inner speech",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Foteini Liwicki": {},
     "Vibha Gupta": {},
@@ -11,38 +11,94 @@
     "Kanjar De": {},
     "Nosheen Abid": {},
     "Sumit Rakesh": {},
-    "Scott Wellington": {},
+    "Scott Wellington": {
+      "orcid": "0000-0002-8384-8474"
+    },
     "Holly Wilson": {},
     "Marcus Liwicki": {},
     "Johan Eriksson": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004196.v2.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004196",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004196",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-023-02286-w",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2022.05.24.492109",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.4",
-  "recording_modality": [
-    "anat",
-    "eeg",
-    "fmap",
-    "func"
-  ],
-  "datatypes": [
-    "anat",
-    "eeg",
-    "fmap",
-    "func"
   ],
   "funding_references": [
     {
       "funder_name": "This research was funded by the Grants for excellent research projects proposals of SRT.ai 2022."
+    },
+    {
+      "funder_name": "SRT.ai",
+      "award_title": "Grants for excellent research projects proposals"
     }
   ],
-  "acknowledgements": "We would like to thank the Stockholm University Brain Imaging Centre (SUBIC) and more precisely Rita Almeida,  Patrik Andersson for giving us access to their facilities and for supporting us in this endeavor.\nPetter Kallioinen and Christoffer Schiehe-Forbes for their valuable support during the EEG data acquisition.\nFinally, we would also like to thank all participants for taking part in this study."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "anat",
+    "fmap",
+    "func",
+    "eeg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "This bimodal neuroimaging dataset combines electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) data acquired during inner-speech production tasks. The dataset includes recordings from four healthy participants performing an inner-speech task with eight words from social and numerical categories, with 40 trials per word per modality. This multimodal approach leverages the complementary temporal resolution of EEG and spatial resolution of fMRI to advance brain-computer interface research for speech prostheses and communication restoration.",
+  "methods_description": "Data were collected from four right-handed participants during an inner-speech task involving eight words from two categories (social: child, daughter, father, wife; numeric: four, three, ten, six). Each word stimulus was presented in 40 trials, yielding 320 trials per modality per participant. EEG and fMRI data were acquired nonsimultaneously. Ethical approval was obtained from Etikprövning myndigheden (ID: 2021-06710-01).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "inner speech"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "speech decoding"
+    },
+    {
+      "term": "speech prostheses"
+    },
+    {
+      "term": "communication restoration"
+    }
+  ],
+  "source_hash": "04012ec5b4c3515904fb0099b6ecb7d3b9265e540eb5430d84cdb0dbbf1789f0"
 }
