@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004196-blue)](https://doi.org/10.82901/nemar.on004196)
+
 Bimodal dataset on Inner Speech
 
 Code available: https://github.com/LTU-Machine-Learning/Inner_Speech_EEG_FMRI 
