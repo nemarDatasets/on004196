@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Bimodal dataset on Inner speech",
-  "description": "This bimodal neuroimaging dataset combines electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) data acquired during inner-speech production tasks. The dataset includes recordings from four healthy participants performing inner-speech tasks with eight words from social and numerical categories, with 40 trials per word per modality. This multimodal approach leverages the complementary temporal resolution of EEG and spatial resolution of fMRI to advance brain-computer interface research for speech prostheses and communication restoration.",
-  "methods_description": "Data were collected from four right-handed participants during an inner-speech task involving eight words from two categories (social: child, daughter, father, wife; numeric: four, three, ten, six). Each word stimulus was presented in 40 trials per modality, yielding 320 trials per participant in each modality. EEG and fMRI data were acquired nonsimultaneously. Ethical approval was obtained from Etikprövning myndigheden (ID: 2021-06710-01).",
+  "description": "This dataset provides bimodal EEG and fMRI recordings acquired non-simultaneously during an inner-speech production task. Four healthy, right-handed participants silently produced eight words drawn from two semantic categories (social and numerical) across multiple trials. The dataset aims to support the development of speech prostheses and brain-computer interfaces by enabling multimodal fusion of high temporal (EEG) and high spatial (fMRI) resolution neuroimaging data.",
+  "methods_description": "Data were collected from four healthy, right-handed participants performing an inner-speech task involving eight word stimuli from two categories (social and numerical), each assessed with 40 trials, resulting in 320 trials per modality per participant. EEG and fMRI data were acquired in separate (non-simultaneous) sessions.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -31,25 +31,13 @@
       "term": "inner speech"
     },
     {
-      "term": "brain-computer interfaces"
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "speech prosthesis"
     },
     {
       "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "speech decoding"
-    },
-    {
-      "term": "speech prostheses"
-    },
-    {
-      "term": "communication restoration"
-    },
-    {
-      "term": "inner-speech production"
-    },
-    {
-      "term": "multimodal fusion"
     }
   ],
   "related_identifiers": [
@@ -59,24 +47,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004196",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/s41597-023-02286-w",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1101/2022.05.24.492109",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.18112/openneuro.ds004196.v2.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004196",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -85,7 +68,7 @@
     },
     {
       "funder_name": "SRT.ai",
-      "award_title": "Grants for excellent research projects proposals"
+      "award_title": "Grants for excellent research projects proposals of SRT.ai 2022"
     }
   ],
   "resource_type_general": "Dataset",
