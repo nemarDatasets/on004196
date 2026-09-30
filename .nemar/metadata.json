@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Bimodal dataset on Inner speech",
-  "description": "This dataset provides bimodal EEG and fMRI recordings acquired non-simultaneously during an inner-speech production task. Four healthy, right-handed participants silently produced eight words drawn from two semantic categories (social and numerical) across multiple trials. The dataset aims to support the development of speech prostheses and brain-computer interfaces by enabling multimodal fusion of high temporal (EEG) and high spatial (fMRI) resolution neuroimaging data.",
-  "methods_description": "Data were collected from four healthy, right-handed participants performing an inner-speech task involving eight word stimuli from two categories (social and numerical), each assessed with 40 trials, resulting in 320 trials per modality per participant. EEG and fMRI data were acquired in separate (non-simultaneous) sessions.",
+  "description": "A bimodal dataset of EEG and fMRI recordings acquired nonsimultaneously during inner-speech production in four healthy, right-handed participants. Participants performed an inner-speech task with eight words from two categories, social and numeric, with 40 trials per word, giving 320 trials per modality per participant. The dataset is intended to support inner speech recognition and brain-computer interfaces for speech prostheses.",
+  "methods_description": "EEG and fMRI were recorded in separate sessions while participants produced inner speech for eight word stimuli (social: child, daughter, father, wife; numeric: four, three, ten, six). Each word was presented in 40 trials. Five participants were recruited, but sub-04 was excluded because of high signal fluctuations. The retained subjects are therefore numbered sub-01, sub-02, sub-03 and sub-05.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -34,7 +34,7 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "speech prosthesis"
+      "term": "speech decoding"
     },
     {
       "term": "multimodal neuroimaging"
@@ -49,7 +49,7 @@
     {
       "identifier": "10.1101/2022.05.24.492109",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds004196.v2.0.2",
@@ -80,7 +80,7 @@
     "eeg"
   ],
   "sizes": [
-    "10.0 GB (41 files)"
+    "9.33 GB (41 files)"
   ],
   "formats": [
     ".bdf",
